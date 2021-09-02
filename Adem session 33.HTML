@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        h1{
+            color: dodgerblue;
+            animation: changecolor;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes changecolor{
+            0%{
+               color: crimson; 
+            }
+            25%{
+                color: dodgerblue;
+            }
+            50%{
+                color: green;
+            }
+            75%{
+                color: goldenrod;
+            }
+            100%{
+                color: orangered;
+            }
+        }
+
+        #ball{
+            width: 200px;
+            height: 200px;
+            background:url('https://cdn.guidingtech.com/media/assets/_1200x630_crop_center-center_82_none/Cool-Flash-Wallpapers-in-HD-and-4K-for-Desktop-and-Mobile-1.png?mtime=1544621011');
+            border-radius: 50%;
+            margin: auto;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes bounce{
+            from{
+                transform: rotate(0);
+                margin-top: 0px;
+                border-radius: 0px;
+        }
+        to{
+            transform: rotate(360deg);
+            margin-top: 400px;
+            border-radius: 50%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Animations
+        </h1>
+    </header>
+    <div id="ball"></div>
+</body>
+</html>
